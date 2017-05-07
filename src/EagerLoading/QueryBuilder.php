@@ -14,6 +14,13 @@ final class QueryBuilder extends Builder {
 	}
 
 	public function where($conditions, $bindParams = NULL, $bindTypes = NULL) {
-		return $this->andWhere($conditions, $bindParams, $bindTypes);
+		$currentConditions = $this->_conditions;
+		
+		// Nest the condition to current ones or set as unique
+		if($currentConditions) {
+			$conditions = "(" . $currentConditions . ") AND (" . $conditions . ")";
+		}
+		
+		return parent::where($conditions, $bindParams, $bindTypes);
 	}
 }
