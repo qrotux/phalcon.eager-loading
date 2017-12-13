@@ -1,5 +1,5 @@
 {
-	"name": "pestipeti/phalcon.eager-loading",
+	"name": "neighborhoods/phalcon.eager-loading",
 	"description": "Solves N+1 query problem in Phalcon Model",
 	"license": "Unlicense",
 	"autoload": {
@@ -16,8 +16,8 @@
 	],
 	"authors": [
 		{
-			"name": "Óscar Enríquez",
-			"homepage": "http://oscar.xyz"
+			"name": "Neighborhoods.com",
+			"homepage": "https://www.neighborhoods.com"
 		}
 	]
 }
