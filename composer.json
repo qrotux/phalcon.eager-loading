@@ -1,5 +1,5 @@
 {
-	"name": "neighborhoods/phalcon.eager-loading",
+	"name": "qrotux/phalcon.eager-loading",
 	"description": "Solves N+1 query problem in Phalcon Model",
 	"license": "Unlicense",
 	"autoload": {
